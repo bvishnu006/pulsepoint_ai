@@ -8,28 +8,12 @@ PulsePoint AI is an end-to-end automated system that converts long-form landscap
 The system analyzes visual frames and audio signals to detect high-energy, high-engagement moments and transforms them into social-media-optimized clips for platforms such as Instagram Reels, YouTube Shorts, and TikTok — with zero manual editing.
 
 # System Architecture
-User Upload (MP4)
-        │
-        ▼
-Streamlit Web Interface
-        │
-        ▼
-Gemini File API (Cloud Upload)
-        │
-        ▼
-Gemini 3 Flash (Video + Audio Analysis)
-        │
-        ▼
-Timestamp Extraction (Regex Parser)
-        │
-        ▼
-MoviePy Video Processing
-        │
-        ▼
-Center Crop (9:16)
-        │
-        ▼
-Vertical MP4 Reels
-        │
-        ▼
+User Upload (MP4) ->
+Streamlit Web Interface ->
+Gemini File API (Cloud Upload) ->
+Gemini 3 Flash (Video + Audio Analysis) ->
+Timestamp Extraction (Regex Parser) ->
+MoviePy Video Processing ->
+Center Crop (9:16) ->
+Vertical MP4 Reels ->
 User Download
